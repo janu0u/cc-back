@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import task.management.project.models.User;
 import task.management.project.payload.JwtLoginSuccessResponse;
@@ -25,8 +24,7 @@ import task.management.project.services.MapValidationErrorService;
 import task.management.project.services.UserService;
 import task.management.project.validator.UserValidator;
 
-@CrossOrigin(methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT,
-    RequestMethod.OPTIONS})
+@CrossOrigin
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
