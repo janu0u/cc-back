@@ -30,8 +30,7 @@ public class UserService {
 
     } catch (Exception e) {
 
-      throw new UsernameAlreadyExistsException(
-          "Username '" + newUser.getUsername() + "' already exists");
+      throw new UsernameAlreadyExistsException(e.getMessage());
 
     }
 
