@@ -24,9 +24,9 @@ import task.management.project.services.MapValidationErrorService;
 import task.management.project.services.UserService;
 import task.management.project.validator.UserValidator;
 
-@CrossOrigin
 @RestController
 @RequestMapping("/api/users")
+@CrossOrigin
 public class UserController {
 
   @Autowired
